@@ -5,20 +5,20 @@
 class Sherlog < Formula
   desc "Hypothesis-driven debugging for Claude Code — the /debug detective loop over a localhost daemon on :2218"
   homepage "https://github.com/neomodular/sherlog"
-  version "0.9.0"
+  version "0.9.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neomodular/sherlog/releases/download/v0.9.0/sherlog_0.9.0_darwin_amd64.tar.gz"
-      sha256 "a964bbbedb8f253a3a026d3e71ae3b7f57d39a28a1fa15ab1bc5bc8daf1eb903"
+      url "https://github.com/neomodular/sherlog/releases/download/v0.9.1/sherlog_0.9.1_darwin_amd64.tar.gz"
+      sha256 "d0a2da389dcf3a9f32ea3a7047fc199da0f0fa60cafde1c89bdaa24d2d7be575"
 
       define_method(:install) do
         bin.install "sherlog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neomodular/sherlog/releases/download/v0.9.0/sherlog_0.9.0_darwin_arm64.tar.gz"
-      sha256 "5e2e68bed807b3f5c652e379fc003159952e774de019e58f5253abc6daab77f3"
+      url "https://github.com/neomodular/sherlog/releases/download/v0.9.1/sherlog_0.9.1_darwin_arm64.tar.gz"
+      sha256 "f5459fd02ea1ba8dc39dc852d57b0b852efc9b37442910e911e08679eaaaf547"
 
       define_method(:install) do
         bin.install "sherlog"
@@ -28,15 +28,15 @@ class Sherlog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neomodular/sherlog/releases/download/v0.9.0/sherlog_0.9.0_linux_amd64.tar.gz"
-      sha256 "c62f848a94e46a1aa88801611c1538093345ed1076a1abd3f38b1f29f088c455"
+      url "https://github.com/neomodular/sherlog/releases/download/v0.9.1/sherlog_0.9.1_linux_amd64.tar.gz"
+      sha256 "0ad5fa0a77863609b190b45df7cc5cfbabe6911c8fb03daa691c62bba537c49f"
       define_method(:install) do
         bin.install "sherlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neomodular/sherlog/releases/download/v0.9.0/sherlog_0.9.0_linux_arm64.tar.gz"
-      sha256 "1f40c6f8cc2a3943290816cc25c45bdac338db7d151ac7c6b3b200cb89d45306"
+      url "https://github.com/neomodular/sherlog/releases/download/v0.9.1/sherlog_0.9.1_linux_arm64.tar.gz"
+      sha256 "6929f535831623ec38bbd45a66a6c5f722fefe31ac66a5b775cf475e8fce6e01"
       define_method(:install) do
         bin.install "sherlog"
       end
